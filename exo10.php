@@ -21,5 +21,6 @@ function afficherFormulaire($nomsInput){
     return $result;
 }
 
-echo afficherFormulaire($nomsInput); jddayofweek
+echo afficherFormulaire($nomsInput); 
+echo <djgijfehiughi>
 ?>
