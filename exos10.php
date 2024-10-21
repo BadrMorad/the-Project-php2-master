@@ -22,5 +22,9 @@ function afficherFormulaire($nomsInput){
 }
 
 echo afficherFormulaire($nomsInput); 
+<<<<<<< HEAD:exos10.php
 
+=======
+echo <djgijfehiughi>
+>>>>>>> 0c41cce79f99ccebe6427b733b6638200b572d8f:exo10.php
 ?>
