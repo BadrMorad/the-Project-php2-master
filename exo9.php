@@ -20,6 +20,6 @@ function afficherRadio($nomsRadio) {
 }
  
 // Exemple d'utilisation de la fonction
-$nomsRadio = array("Monsieur", "Madame", "Mademoiselle");
+$nomsRadio = array("Masculin", "Féminin", "Autre");
 afficherRadio($nomsRadio);
 ?>

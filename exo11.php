@@ -4,22 +4,14 @@
 
 <?php
 
-function afficherRadio($nomsRadio) {
-    // Vérifie si le tableau n'est pas vide
-    if (!empty($nomsRadio) && is_array($nomsRadio)) {
-        // Parcourt chaque élément du tableau
-        foreach ($nomsRadio as $nom) {
-            // Affiche chaque bouton radio
-            echo '<label>';
-            echo '<input type="radio" name="genre" value="' . htmlspecialchars($nom) . '"> ' . htmlspecialchars($nom);
-            echo '</label><br>';
-        }
-    } else {
-        echo "Aucun nom à afficher.";
-    }
+function formaterDateFr($date_string) {
+    $mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+    $timestamp = strtotime($date_string);
+    $jour = date("d", $timestamp);
+    $mois_nom = $mois[date("n", $timestamp) - 1];
+    $annee = date("Y", $timestamp);
+    echo "$jour $mois_nom $annee";
 }
  
-// Exemple d'utilisation de la fonction
-$nomsRadio = array("Masculin", "Féminin", "Autre");
-afficherRadio($nomsRadio);
+formaterDateFr("2018-02-23");
 ?>
