@@ -21,5 +21,6 @@ function afficherFormulaire($nomsInput){
     return $result;
 }
 
-echo afficherFormulaire($nomsInput); gc_collect_cycles
+echo afficherFormulaire($nomsInput); 
+
 ?>

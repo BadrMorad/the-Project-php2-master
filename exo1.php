@@ -15,8 +15,6 @@
 $texte = "Mon texte en paramétre";
 $texte2 = "Mon auter texte en arguments";
 
-
-
 // afficher le résultat de la fonction convertirMajRouge
 echo convertirMajRouge($texte);
 echo convertirMajRouge($texte2);
